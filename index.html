@@ -1,0 +1,446 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Note</title>
+<link rel="shortcut icon" href="https://aslant.top/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://aslant.top/media/css/tailwind.css">
+<link rel="stylesheet" href="https://aslant.top/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Note - Atom Feed" href="https://aslant.top/atom.xml">
+
+<script async custom-element="amp-iframe"
+  src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+  
+    
+
+  <meta name="description" content="温故而知新" />
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+    </div>
+  </div>
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
+    
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
+    
+      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        目录
+      </a>
+    
+      <a href="https://aslant.top/software" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        资源
+      </a>
+    
+      <a href="https://gate.ofo.moe/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        任意门
+      </a>
+    
+      <a href="https://aslant.top/ruA2P2JZr" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        资料&amp;书籍
+      </a>
+    
+      <a href="https://aslant.top/xVDV1cXhO" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        在线游戏
+      </a>
+    
+    <a href="https://aslant.top/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
+</div>
+
+    <div class="max-w-4xl w-full mx-auto ">
+      
+        <header class="flex py-16 md:py-32 mt-12 flex-col md:flex-row px-4 md:px-0 animated fadeIn">
+  <div class="flex-1 order-2 md:order-1 md:pr-16">
+    <div class="text-4xl font-bold text-center md:text-left">
+      Note
+    </div>
+    <div class="text-xl text-gray-500 mt-4 text-center md:text-left">
+      温故而知新
+    </div>
+    
+      <div class="mt-8 text-center md:text-left">
+        <a
+          href="https://aslant.top/tags" 
+          arget="_blank"
+          class="text-sm bg-yellow-50 dark:bg-indigo-500 dark:text-gray-700 font-semibold px-4 py-2 inline-block yellow-btn transition-fast rounded"
+        >LET&#39;S TALK!</a>
+      </div>
+    
+    
+      <div class="mt-8 flex items-center">
+        
+          <div class="text-gray-500 mr-2">
+            Call me 👉
+          </div>
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            
+              <a href="https://t.me/ASLant7" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-telegram-line"></i>
+              </a>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    
+  </div>
+  <div class="md:mx-8 flex-shrink-0 self-start rounded-full border-4 border-dotted border-transparent hover:border-yellow-50 p-2 w-32 h-32 order-1 md:order-2 mx-auto s3-dotted">
+    <img class="rounded-full object-cover" src="https://aslant.top/images/avatar.png?v=1659546195305" alt="Note" width="100%" height="100%">
+  </div>
+</header>
+      
+
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
+        
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+      <i class="ri-star-line text-orange-200 absolute text-2xl left-0 ml-1 rotate-90"></i>
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://aslant.top/E9WYhQUjM/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Windows光标
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2022年05月11日  Wednesday</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        
+动态 阿尼亚光标(点击下载)
+
+
+
+胡桃光标(点击下载)
+
+
+
+Oreo_nord光标(点击下载)
+
+
+
+Mac OS光标（全版本 支持4K）(点击下载)
+
+
+
+Google-course(四色)(点击下载)
+
+
+
+Capitaine C...
+      </div>
+      <a href="https://aslant.top/E9WYhQUjM/" class="btn">
+        Reading
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://aslant.top/Buzp2NChO/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          开源镜像站
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2022年08月03日  Wednesday</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        清华大学开源镜像
+华为云开源镜像
+腾讯软件源
+北京交通大学开源镜像
+网易开源镜像
+中科大开源镜像
+阿里巴巴开源镜像
+谷歌学术镜像
+...
+      </div>
+      <a href="https://aslant.top/Buzp2NChO/" class="btn">
+        Reading
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://aslant.top/j8EsT3pbs/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          C语言入门_3
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2022年08月03日  Wednesday</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        
+
+      </div>
+      <a href="https://aslant.top/j8EsT3pbs/" class="btn">
+        Reading
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://aslant.top/wBPr0EmQ3/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          测试
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2022年08月02日  Tuesday</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        私有云
+ 非 共 享 网 盘
+网盘
+
+
+
+私有云
+
+
+
+
+...
+      </div>
+      <a href="https://aslant.top/wBPr0EmQ3/" class="btn">
+        Reading
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://aslant.top/sdUoL-WDt/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          2小时 专注模式
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2022年08月02日  Tuesday</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        安静的自习室，专注学习，工作。
+
+
+
+...
+      </div>
+      <a href="https://aslant.top/sdUoL-WDt/" class="btn">
+        Reading
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://aslant.top/1THzJvBhS/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          C语言入门_2
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2022年08月01日  Monday</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        C 变量
+变量要先定义后使用！！！
+
+变量其实只不过是程序可操作的存储区的名称。C 语言中每个变量都有特定的类型，类型决定了变量存储的大小和布局，该范围内的值都可以存储在内存中，运算符可应用于变量上。
+变量的名称可以由字母、数字和下划线字符...
+      </div>
+      <a href="https://aslant.top/1THzJvBhS/" class="btn">
+        Reading
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://aslant.top/fuT7-zIko/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          C语言入门_1
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2022年07月31日  Sunday</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        C语言
+C程序结构主要包括：
+
+
+
+预处理器指令
+函数
+变量
+语句 和 表达式
+注释
+
+
+
+以输出 Hello World! 为例
+#include &lt;stdio.h&gt;
+int main()
+{
+   /* 这是我的第一个 C ...
+      </div>
+      <a href="https://aslant.top/fuT7-zIko/" class="btn">
+        Reading
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://s1.ax1x.com/2022/08/01/vAk1B9.png" alt="C语言入门_1">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://aslant.top/lZ9hxKnAp/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          Markdown语言
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2022年07月28日  Thursday</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        1. Markdown是什么？
+Markdown是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以HTML格式发布。
+Markdown也可以理解为将以Markdown语法编写的语言转换成HTML内容的工具，文件格式...
+      </div>
+      <a href="https://aslant.top/lZ9hxKnAp/" class="btn">
+        Reading
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://aslant.top/0lA91SSiA/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          电影&amp;电视剧&amp;动漫
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2022年07月27日  Wednesday</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        单击标题访问
+# 国内版 奈飞
+
+
+# 片 库
+
+
+
+# 555 电 影
+
+
+# 樱 花 动 漫
+
+
+Android APP
+
+龙虾影视
+
+
+
+无需登录
+无广告
+资源多
+全免费
+
+
+
+...
+      </div>
+      <a href="https://aslant.top/0lA91SSiA/" class="btn">
+        Reading
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://i0.hdslb.com/bfs/album/336334f0cfbc253c9f5aff2a8da4bc82d62ec825.png" alt="电影&amp;电视剧&amp;动漫">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://aslant.top/Udpe-ufRO/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          HTML语言（HTML5标准）
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2022年07月22日  Friday</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        
+
+      </div>
+      <a href="https://aslant.top/Udpe-ufRO/" class="btn">
+        Reading
+      </a>
+    </div>
+    
+  </div>
+  
+      </div>
+
+      
+  <div class="my-4 flex justify-between px-4 md:px-0">
+    
+    
+      <a href="https://aslant.top/page/2" class="btn btn-white">
+        下一页
+        <i class="ri-arrow-right-line ml-4"></i>
+      </a>
+    
+  </div>
+
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  
+</footer>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://aslant.top/media/scripts/main.js"></script>
+</body>
+
+</html>
